@@ -13,6 +13,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HibernateUtil {
+    /*
+
     public static void generateSchema(){
         Map<String, String> settings = new HashMap<>();
         settings.put(Environment.URL, "jdbc:h2:mem:schema");
@@ -28,4 +30,6 @@ public class HibernateUtil {
         schemaExport.setOutputFile("create.sql");
         schemaExport.createOnly(EnumSet.of(TargetType.SCRIPT), metadata);
     }
+
+     */
 }

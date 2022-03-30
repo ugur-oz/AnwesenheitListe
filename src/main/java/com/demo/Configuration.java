@@ -23,7 +23,7 @@ public class Configuration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity security) throws Exception{
-        security.authorizeRequests().antMatchers("/h2-console/**", "/", "/login", "/css/**", "/img/**").permitAll().anyRequest()
+        security.authorizeRequests().antMatchers("/h2-console/**","https://klassenlist.herokuapp.com/", "/", "/login", "/css/**", "/img/**").permitAll().anyRequest()
                 .authenticated().and().formLogin().loginPage("/login").defaultSuccessUrl("/startpage").permitAll().and()
                 .logout().invalidateHttpSession(true).clearAuthentication(true).logoutSuccessUrl("/login").permitAll();
 
